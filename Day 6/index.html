@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="body">
+        <a id="link" href="www.abes.ac.in">College</a><br>
+        <button onclick="append()">Append</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="txt" placeholder="input....">
+    <p id="res"></p>
+
+
+    <script>
+        const handlekeypress = (event) => {
+            document.getElementById('res').innerHTML = `Key Pressed ${event.target.value}`;
+        }
+        let myinput = document.getElementById('txt');
+        myinput.addEventListener('keypress', handlekeypress);
+    </script>
+</body>
+
+</html>
